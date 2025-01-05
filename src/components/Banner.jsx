@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Confetti from "react-confetti";
-import { X, Copy, CreditCard,  User, PiggyBank } from "lucide-react";
+import { X, Copy, CreditCard, User, PiggyBank } from "lucide-react";
 
 export default function HeroSection() {
   const [modalVisible, setModalVisible] = useState(false);
@@ -26,10 +26,10 @@ export default function HeroSection() {
     setShowConfetti(true);
     setTimeout(() => setShowConfetti(false), 5000); // Hide confetti after 5 seconds
   };
-  
+
   const onClose = () => {
     setModalVisible(false);
- };
+  };
 
   return (
     <div className="relative min-h-screen overflow-hidden flex flex-col items-center justify-center bg-gradient-to-b from-black via-purple-900/30 to-black">
@@ -86,10 +86,10 @@ export default function HeroSection() {
                   <p className="text-gray-700">Account Number:</p>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="font-medium">9163169949</span>
+                  <span className="font-medium">9019659410</span>
                   <button
                     className="text-purple-600 hover:text-purple-700"
-                    onClick={() => copyToClipboard("9163169949")}
+                    onClick={() => copyToClipboard("9019659410")}
                   >
                     <Copy className="w-5 h-5" />
                   </button>
@@ -113,13 +113,12 @@ export default function HeroSection() {
               <div className="flex items-center justify-between">
                 <div className="flex items-center justify-between gap-2">
                   <User className="w-5 h-5 text-gray-500" />
-                  
-                  <span className="font-medium">Robinson Honour</span>
+
+                  <span className="font-medium">Adegbola Abdulbaqee</span>
                   <button
                     className="text-purple-600 hover:text-purple-700"
-                    onClick={() => copyToClipboard("Robinson Honour")}
-                  >
-                  </button>
+                    onClick={() => copyToClipboard("Adegbola Abdulbaqee")}
+                  ></button>
                 </div>
               </div>
             </div>
